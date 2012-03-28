@@ -1,0 +1,13 @@
+Replicates functionality of Date.toLocaleFormat() as documented on MDC
+https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Global_Objects/Date/toLocaleFormat
+
+Format string follows C function strftime():
+http://www.opengroup.org/onlinepubs/007908799/xsh/strftime.html
+-- SOME TOKENS ARE NOT IMPLEMENTED YET --
+
+@param {Date} date A JavaScript Date object 
+@param {String} formatStr Date format desired
+@param {String} locale Optionally specify the locale to be used, en_US by default (en_* and fr_* are supported)
+@author Bruno Morency bruno@morency.me
+@copyright Bruno Morency
+@license MOZILLA PUBLIC LICENSE Version 1.1 - http://www.mozilla.org/MPL/MPL-1.1.txt 
