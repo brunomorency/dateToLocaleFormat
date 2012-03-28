@@ -58,9 +58,9 @@ function dateToLocaleFormat(date, formatStr, locale) {
 	});
 	
 	// replace values
+	var unsupported = '';
 	var formattedDate = formatStr.replace(/(%[a-zA-Z])/g, function(str, p1, p2){
 		var repStr = '';
-		var unsupported = '';
 		switch(str) {
 			case '%a':
 			    repStr = dict[dictKey].daysAbbr[date.getDay()]; break;
